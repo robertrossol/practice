@@ -17,7 +17,7 @@ def even(n)
   puts n - even(n - 2).to_i if n >= 0
 end
 
-even(100)
+even(49)
 
 # 3
 def sum(num)
@@ -36,3 +36,20 @@ end
 puts array_sum([5, 6, 8, 10, 23])
 
 # 5
+def factorial(y)
+  if y > 1
+    y * factorial(y - 1)
+  else
+    1
+  end
+end
+
+puts factorial(5)
+
+# Fibonacci numbers are numbers that follow this pattern: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... that is, each number is the sum of the two immediate numbers that precede it. 
+# 6 Write a recursive function that prints out the list of fibonacci numbers up to 987.
+# 7 Write a recursive function that reverses a string.
+# 8 Write a recursive function that accepts two numbers (a numerator and denominator), and returns the remainder if you divide the numerator by the denominator. The catch: Do not use the modulo operator!
+# 9 Write a recursive function that accepts two numbers and calculates one by the power of the other. For example, if the numbers were 2 and 5, it would calculate 25. Do not use any built-in power operations provided by your computer language.
+
+# 6

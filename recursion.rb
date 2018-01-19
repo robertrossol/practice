@@ -53,3 +53,9 @@ puts factorial(5)
 # 9 Write a recursive function that accepts two numbers and calculates one by the power of the other. For example, if the numbers were 2 and 5, it would calculate 25. Do not use any built-in power operations provided by your computer language.
 
 # 6
+def fib_nums(final)
+  return final if (0..1).include? final
+  (fib_nums( final - 1) + fib_nums( final - 2) )
+end
+
+puts fib_nums(7)
